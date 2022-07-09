@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="756.0" prefWidth="837.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.reportCustomerController">
+   <children>
+      <Button fx:id="btnExitReport" layoutX="720.0" layoutY="717.0" mnemonicParsing="false" onAction="#onActionExitReport" prefWidth="100.0" text="Exit" />
+      <ComboBox fx:id="reportType" layoutX="24.0" layoutY="38.0" onAction="#onActionReportTypeMonth" prefWidth="150.0" promptText="Type" />
+      <ComboBox fx:id="reportMonth" layoutX="242.0" layoutY="38.0" onAction="#onActionReportTypeMonth" prefWidth="150.0" promptText="Month Name" />
+      <Label fx:id="reportCount" layoutX="512.0" layoutY="42.0" text="Count" />
+      <ComboBox fx:id="reportContacts" layoutX="24.0" layoutY="101.0" onAction="#onActionReportContacts" prefWidth="150.0" promptText="Contacts" />
+      <TableView fx:id="contactsTableView" layoutX="11.0" layoutY="160.0" prefHeight="220.0" prefWidth="820.0">
+        <columns>
+          <TableColumn fx:id="reportAppointment_ID" prefWidth="99.0" text="Appointment_ID" />
+          <TableColumn fx:id="reportTitle" prefWidth="73.0" text="Title" />
+            <TableColumn fx:id="reportDescription" prefWidth="79.0" text="Description" />
+            <TableColumn fx:id="reportLocation" prefWidth="76.0" text="Location" />
+            <TableColumn fx:id="reportContact" prefWidth="70.0" text="Contact" />
+            <TableColumn fx:id="reportTypeColumn" prefWidth="53.0" text="Type" />
+            <TableColumn fx:id="reportStart" prefWidth="114.0" text="Start Date/Time" />
+            <TableColumn fx:id="reportEnd" prefWidth="114.0" text="End Date/Time" />
+            <TableColumn fx:id="reportCustomer_ID" prefWidth="78.0" text="Customer_ID" />
+            <TableColumn fx:id="reportUser_ID" prefWidth="62.0" text="User_ID" />
+        </columns>
+      </TableView>
+      <ComboBox fx:id="reportCountry" layoutX="24.0" layoutY="438.0" onAction="#onActionReportCountry" prefWidth="150.0" promptText="Country" />
+      <TableView fx:id="countryTableView" layoutX="11.0" layoutY="483.0" prefHeight="220.0" prefWidth="809.0">
+         <columns>
+            <TableColumn fx:id="reportCustomer_IDCountry" prefWidth="123.0" text="Customer_ID" />
+            <TableColumn fx:id="reportCustomerNameCountry" prefWidth="180.0" text="Customer Name" />
+            <TableColumn fx:id="reportAddressCountry" prefWidth="192.0" text="Address" />
+            <TableColumn fx:id="reportPostalCodeCountry" prefWidth="90.0" text="Postal Code" />
+            <TableColumn fx:id="reportPhoneNumberCountry" prefWidth="134.0" text="Phone Number" />
+            <TableColumn fx:id="reportDivision_IDCountry" prefWidth="89.0" text="Division_ID" />
+         </columns>
+      </TableView>
+   </children>
+</AnchorPane>

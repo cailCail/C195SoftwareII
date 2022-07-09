@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane prefHeight="552.0" prefWidth="724.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.customerController">
+   <children>
+      <Button fx:id="addBtnCustomer" layoutX="237.0" layoutY="369.0" mnemonicParsing="false" onAction="#onActionAddBtnCustomer" prefWidth="121.0" text="Add Customers" />
+      <Button fx:id="updateBtnCustomer" layoutX="405.0" layoutY="369.0" mnemonicParsing="false" onAction="#onActionUpdateBtnCustomer" text="Update Customers" />
+      <Button fx:id="deleteBtnCustomer" layoutX="567.0" layoutY="369.0" mnemonicParsing="false" onAction="#onActionDeleteBtnCustomer" prefWidth="121.0" text="Delete Customers" />
+      <Button fx:id="exitBtnCustomer" layoutX="567.0" layoutY="435.0" mnemonicParsing="false" onAction="#anActionExitBtnCustomer" prefWidth="121.0" text="Exit" />
+      <TableView fx:id="customerTableView" layoutX="7.0" layoutY="63.0" prefHeight="200.0" prefWidth="701.0">
+        <columns>
+          <TableColumn fx:id="customerCustomer_ID" prefWidth="107.0" text="Customer_ID" />
+          <TableColumn fx:id="customerCustomerName" prefWidth="120.0" text="Customer Name" />
+            <TableColumn fx:id="customerAddress" prefWidth="120.0" text="Address" />
+            <TableColumn fx:id="customerPostalCode" prefWidth="120.0" text="Postal Code" />
+            <TableColumn fx:id="customerPhoneNumber" prefWidth="120.0" text="Phone Number" />
+            <TableColumn fx:id="Division_ID" prefWidth="120.0" text="Division_ID" />
+        </columns>
+      </TableView>
+      <Text fx:id="customerInfoLbl" layoutX="567.0" layoutY="39.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Customer Information">
+         <font>
+            <Font size="14.0" />
+         </font></Text>
+   </children>
+</AnchorPane>

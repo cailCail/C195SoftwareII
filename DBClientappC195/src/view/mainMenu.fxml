@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.mainMenuController">
+   <children>
+      <VBox alignment="CENTER" layoutX="244.0" layoutY="66.0" prefHeight="200.0" prefWidth="100.0" spacing="20.0">
+         <children>
+            <Button fx:id="btnMainForm" mnemonicParsing="false" onAction="#onActionMainApplication" prefWidth="100.0" text="Main Form" />
+            <Button fx:id="btnReports" layoutX="10.0" layoutY="10.0" mnemonicParsing="false" onAction="#onActionReports" prefWidth="100.0" text="Reports" />
+            <Button fx:id="btnExit" layoutX="10.0" layoutY="35.0" lineSpacing="20.0" mnemonicParsing="false" onAction="#onActionExitApplication" prefWidth="100.0" text="Exit" />
+         </children>
+      </VBox>
+   </children>
+</AnchorPane>
